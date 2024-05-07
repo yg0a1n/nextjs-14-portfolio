@@ -154,20 +154,6 @@ export const newFeatures = {
       subtitle:
         "Il s'agit d'une réalisation, qui a nécessité plusieurs savoir-faire, pour inciter à la rémunération des développeurs.",
       href: 'https://dashboard.feature.sh/',
-      tags: [
-        {
-          name: 'react',
-          color: 'blue-text-gradient',
-        },
-        {
-          name: 'mongodb',
-          color: 'green-text-gradient',
-        },
-        {
-          name: 'tailwind',
-          color: 'pink-text-gradient',
-        },
-      ],
     },
     {
       imgFile: 'avatar-n1c0.jpeg',
@@ -234,6 +220,16 @@ export const newFeatureCards = {
       source_img_link: 'https://jobs.feature.sh/jobs/',
       collection: 'news',
     },
+    {
+      name: '_mastercode',
+      description:
+        'Plateforme de formation en ligne de développement Web / Blockchain / IA, pour les développeurs débutants aux plus avancés.',
+      imgFile: 'mastercode-home-page.png',
+      logo_link: 'https://mastercode.cc/fr',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://mastercode.cc/fr',
+      collection: 'news',
+    },
   ],
   en: [
     {
@@ -273,6 +269,16 @@ export const newFeatureCards = {
       logo_link: 'https://jobs.feature.sh/jobs/',
       logo_img: 'feature-logo_100w.png',
       source_img_link: 'https://jobs.feature.sh/jobs/',
+      collection: 'news',
+    },
+    {
+      name: '_mastercode',
+      description:
+        'Online Web/Blockchain/AI development training platform, for beginners to more advanced developers.',
+      imgFile: 'mastercode-home-page.png',
+      logo_link: 'https://mastercode.cc/en',
+      logo_img: 'feature-logo_100w.png',
+      source_img_link: 'https://mastercode.cc/en',
       collection: 'news',
     },
   ],
