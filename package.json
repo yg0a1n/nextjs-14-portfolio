@@ -29,9 +29,8 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/accept-language-parser": "^1.5.6",
     "autoprefixer": "^10.4.16",
-    "eslint": "^9.23.0",
+    "eslint": "^8.56.0",
     "eslint-config": "^0.3.0",
-    "eslint-config-next": "^14.0.4",
     "postcss": "^8.4.33",
     "prettier": "^3.1.1",
     "tailwindcss": "^3.4.1"
