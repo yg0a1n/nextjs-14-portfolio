@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/api/my-stemap.js",
+    "app/api/my-stemap.js"
   ],
   "exclude": ["node_modules"]
 }

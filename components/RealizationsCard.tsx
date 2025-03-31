@@ -27,7 +27,7 @@ export default function RealizationsCard({
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.5, 1)}
-      className="flex md:flex-row flex-col gap-4"
+      className="flex flex-col gap-4 md:flex-row"
     >
       <Link href={href}>
         <Image
@@ -39,39 +39,19 @@ export default function RealizationsCard({
         />
       </Link>
 
-      <div className="w-full flex justify-between items-center">
+      <div className="flex items-center justify-between w-full">
         <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
           <h4 className="font-normal lg:text-[42px] text-[26px]">{title}</h4>
           <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">
             {subtitle}
           </p>
           <div className="flex justify-between">
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mt-4">
               {tags.map((tag) => (
                 <p key={`realizations-${tag}`} className={`text-[14px]`}>
                   #{tag}
                 </p>
               ))}
-            </div>
-            <div className="flex items-center gap-2 rounded-lg cursor-pointer  mt-4 mr-6">
-              <Link href="/">
-                <div className="flex">
-                  <span className="text-black dark:text-white font-bold mr-2">
-                    Repo
-                  </span>
-                  <Image
-                    src={
-                      isDark
-                        ? '/img/logos/github-logo-white.svg'
-                        : '/img/logos/github-logo-black.svg'
-                    }
-                    alt="github"
-                    className="w-[24px] h-[24px] block"
-                    width={24}
-                    height={24}
-                  />
-                </div>
-              </Link>
             </div>
           </div>
         </div>

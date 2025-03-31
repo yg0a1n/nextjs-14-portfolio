@@ -1,9 +1,8 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const SocialAssets = ({ isDark }: { isDark: boolean }) => (
-  <div className="flex gap-4 rounded-lg p-2 z-10">
+  <div className="z-10 flex gap-4 p-2 rounded-lg">
     <Link href="https://www.linkedin.com/in/y-goalen/">
       <Image
         src={
@@ -30,7 +29,7 @@ const SocialAssets = ({ isDark }: { isDark: boolean }) => (
         height={24}
       />
     </Link>
-    <Link href="mailto:y.goalen@gmail.com">
+    <Link href="mailto:y.goalen@outlook.com">
       <Image
         src={isDark ? '/img/icons/at-white.png' : '/img/icons/at-black.png'}
         alt="at"

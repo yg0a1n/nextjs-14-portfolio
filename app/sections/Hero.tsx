@@ -6,7 +6,7 @@ import { staggerContainer, textVariant } from '@/utils/motion'
 
 export default function Hero() {
   return (
-    <section className="sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6">
+    <section className="py-12 pl-6 sm:py-16 xs:py-8 sm:pl-16">
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"
@@ -14,9 +14,9 @@ export default function Hero() {
         viewport={{ once: false, amount: 0.25 }}
         className="2xl:max-w-[1280px] w-full mx-auto flex flex-col"
       >
-        <div className="flex justify-center items-center flex-col relative z-10">
+        <div className="relative z-10 flex flex-col items-center justify-center">
           <motion.div
-            variants={textVariant(1.2)}
+            variants={textVariant(0.4)}
             className="flex flex-row w-[95%] justify-center items-center mr-4 md:mr-20"
           >
             <h1 className="font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase mr-3">
