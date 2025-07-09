@@ -1,16 +1,16 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import { motion } from 'framer-motion'
-import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
-import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
+import { navbarContent } from '@/constants'
 import { navVariants } from '@/utils/motion'
-import ThemeButton from './ThemeButton'
 import SocialAssets from './SocialAssets'
+import ThemeButton from './ThemeButton'
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false)
@@ -24,6 +24,9 @@ export default function Navbar() {
 
   const pathname = usePathname()
   const href = pathname === '/en' ? '/fr' : '/en'
+
+  // Détection de la langue pour la traduction du badge
+  const lang = pathname.startsWith('/en') ? 'en' : 'fr'
 
   if (!mounted) return null
 
@@ -50,26 +53,18 @@ export default function Navbar() {
             )}
           </div>
           <ThemeButton theme={theme} setTheme={setTheme} />
-          <div className="flex items-center gap-2 mr-4 rounded-lg cursor-pointer">
-            <Link href="https://github.com/yg0a1n/nextjs-14-portfolio">
-              <div className="flex justify-between">
-                <span className="pr-1 font-bold text-black dark:text-white">
-                  Repo
-                </span>
-                <Image
-                  src={
-                    isDark
-                      ? '/img/logos/github-logo-white.svg'
-                      : '/img/logos/github-logo-black.svg'
-                  }
-                  alt="github"
-                  className="w-[24px] h-[24px] block"
-                  width={24}
-                  height={24}
-                />
-              </div>
-            </Link>
-          </div>
+          <Link
+            href="https://github.com/yg0a1n/nextjs-14-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2"
+          >
+            <span
+              className="px-4 py-2 text-sm font-semibold text-white rounded-full border shadow-none transition-all duration-200 cursor-pointer border-white/30 dark:border-white/30 hover:drop-shadow-lg"
+            >
+              {navbarContent[lang].repoBadge}
+            </span>
+          </Link>
         </div>
       </div>
     </motion.nav>

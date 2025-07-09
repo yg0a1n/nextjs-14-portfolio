@@ -1,3 +1,12 @@
+export const navbarContent = {
+  fr: {
+    repoBadge: 'Voir le repo',
+  },
+  en: {
+    repoBadge: 'View repo',
+  },
+}
+
 export const getStartedContent = {
   fr: {
     typingText: '| Que fais-je?',
@@ -57,39 +66,47 @@ export const aboutMeContent = {
   },
 }
 
-export const realizationsContent = {
+export const myPortfolioItems = {
   fr: {
-    typingText: '| Mes réalisations',
-    title: 'Quelques unes de mes réalisations',
+    typingText: '| Mes travaux sélectionnés',
+    title: 'Quelques unes de mes créations',
   },
   en: {
-    typingText: '| My realizations',
-    title: 'Some of my realizations',
+    typingText: '| My selected works',
+    title: 'Some of my creations',
   },
 }
 
-export const realizationsWebsite = {
+export const myPortfolioItemsWebsite = {
   fr: [
+    {
+      imgFile: 'nextjs-starter-ui-kit_900w675h.png',
+      title: 'Kit de démarrage Next.js 15',
+      subtitle:
+        "Starter Next.js 15 avec Tailwind CSS et shadcn/ui, intègre Docker et GitHub Actions pour un déploiement CI/CD automatisé sur Fly.io.",
+      href: 'https://starter-next15-ui-kit.vercel.app/',
+      tags: ['nextjs15', 'tailwindcss', 'shadcn-ui', 'docker', 'cookies-consent', 'cicd', 'flyio'],
+    },
     {
       imgFile: 'crypto-leetchi_1200w900h.jpg',
       title: 'Crypto Leetchi',
       subtitle:
-        "Réalisation d'un projet Web3 dans le cadre d'une formation blockchain à la Wild Code School.",
+        "Développement d’une Dapp Web3 réalisé dans le cadre d’une formation blockchain à la Wild Code School.",
       href: 'https://leetchi.ethprod.xyz/home',
-      tags: ['react', 'ethers'],
+      tags: ['react', 'ethers', 'ipfs'],
     },
     {
       imgFile: 'couleurpartage_900w675h.png',
       title: 'Couleur et partage',
       subtitle:
-        'Page web simple destinée à la communication pour ma soeur entrepreneuse indépendante en peinture au Québec.',
+        'Création d’une page web simple pour une entrepreneuse indépendante en peinture basée au Québec, dédiée à sa communication professionnelle.',
       href: 'https://www.couleurpartage.xyz/fr',
       tags: ['nextjs', 'tailwind', 'sendgrid'],
     },
     {
       imgFile: 'markdown_qa_demo_900wx675h.png',
       title: 'Markdown QA',
-      subtitle: "Suivis et résolutions des journaux d'erreurs des backends.",
+      subtitle: "Conception d’un outil de gestion des priorités permettant le suivi, la classification et la résolution des erreurs issues des journaux des serveurs backend.",
       href: 'https://nextjs-markdown-qa.vercel.app/',
       tags: ['nextjs', 'mdx'],
     },
@@ -103,56 +120,61 @@ export const realizationsWebsite = {
   ],
   en: [
     {
-      imgFile: 'crypto-leetchi_1200w900h.jpg',
-      title: 'Crypto Leetchi',
-      subtitle:
-        'Realization of a Web3 project as part of a blockchain training at the Wild Code School.',
-      href: 'https://leetchi.ethprod.xyz/home',
-      tags: ['react', 'ethers'],
+      imgFile: "nextjs-starter-ui-kit_900w675h.png",
+      title: "Next.js 15 Starter Kit",
+      subtitle: "Next.js 15 starter with Tailwind CSS and shadcn/ui, includes Docker and GitHub Actions for automated CI/CD deployment on Fly.io.",
+      href: "https://nextjs-14-portfolio.vercel.app/",
+      tags: ["nextjs15", "tailwindcss", "shadcn-ui", "docker", "github-actions", "cicd", "flyio"]
     },
     {
-      imgFile: 'couleurpartage_900w675h.png',
-      title: 'Couleur et partage',
-      subtitle:
-        'Simple web page for communication for my sister, an independent entrepreneur in painting in Quebec.',
-      href: 'https://www.couleurpartage.xyz/fr',
-      tags: ['nextjs', 'tailwind', 'sendgrid'],
+      imgFile: "crypto-leetchi_1200w900h.jpg",
+      title: "Crypto Leetchi",
+      subtitle: "Development of a Web3 Dapp as part of a blockchain training program at Wild Code School.",
+      href: "https://leetchi.ethprod.xyz/home",
+      tags: ["react", "ethers", "ipfs"]
     },
     {
-      imgFile: 'markdown_qa_demo_900wx675h.png',
-      title: 'Markdown QA',
-      subtitle: 'Tracking and resolving backend error logs.',
-      href: 'https://nextjs-markdown-qa.vercel.app/',
-      tags: ['nextjs', 'mdx'],
+      imgFile: "couleurpartage_900w675h.png",
+      title: "Couleur et partage",
+      subtitle: "Creation of a simple web page for a self-employed painter based in Quebec, dedicated to her professional communication.",
+      href: "https://www.couleurpartage.xyz/fr",
+      tags: ["nextjs", "tailwind", "sendgrid"]
     },
     {
-      imgFile: 'uptime_status_demo_900w675h.png',
-      title: 'Uptime status',
-      subtitle: 'Front-end and backend availability status',
-      href: 'https://nextjs-uptime-status.vercel.app/',
-      tags: ['nextjs', 'postgres'],
+      imgFile: "markdown_qa_demo_900wx675h.png",
+      title: "Markdown QA",
+      subtitle: "Design of a priority management tool for tracking, classifying, and resolving errors from backend server logs.",
+      href: "https://nextjs-markdown-qa.vercel.app/",
+      tags: ["nextjs", "mdx"]
     },
-  ],
+    {
+      imgFile: "uptime_status_demo_900w675h.png",
+      title: "Uptime Status",
+      subtitle: "Availability status of frontend and backend services.",
+      href: "https://nextjs-uptime-status.vercel.app/",
+      tags: ["nextjs", "postgres"]
+    }
+  ]
 }
 
-export const newFeaturesContent = {
+export const myPortfolioItemsWeb3 = {
   fr: {
-    typingText: '| Mon rôle actuel',
-    title: `Qu'en est-il de mon travail actuel?`,
+    typingText: '| Mes travaux récents',
+    title: `Mes réalisations en entreprise`,
   },
   en: {
-    typingText: '| My previous role"',
-    title: 'What about my previous work?',
+    typingText: '| My recent works',
+    title: 'My business achievements',
   },
 }
 
-export const newFeatures = {
+export const web3ProExperiences = {
   fr: [
     {
       imgFile: 'feature-logo_100w.png',
       title: 'FEATURE',
       subtitle:
-        "Il s'agit d'une réalisation, qui a nécessité plusieurs savoir-faire, pour inciter à la rémunération des développeurs.",
+        'Startup Web3 conçue pour valoriser le travail des développeurs via une approche innovante de rémunération, en mobilisant diverses compétences techniques.',
       href: 'https://dashboard.feature.sh/',
     },
     {
@@ -167,7 +189,7 @@ export const newFeatures = {
       imgFile: 'feature-logo_100w.png',
       title: 'FEATURE',
       subtitle:
-        'This is an achievement, which required several know-how, to encourage the remuneration of developers.',
+        'Web3 startup designed to promote the work of developers through an innovative compensation approach, mobilizing various technical skills.',
       href: 'https://dashboard.feature.sh/',
     },
     {
@@ -179,7 +201,7 @@ export const newFeatures = {
   ],
 }
 
-export const newFeatureCards = {
+export const portfolioItemsWeb3Cards = {
   fr: [
     {
       name: '',
@@ -279,6 +301,63 @@ export const newFeatureCards = {
       logo_link: 'https://mastercode.cc/en',
       logo_img: 'feature-logo_100w.png',
       source_img_link: 'https://mastercode.cc/en',
+      collection: 'news',
+    },
+  ],
+}
+
+export const newFeaturesContent = {
+  fr: {
+    typingText: '| Mon rôle actuel',
+    title: `Qu'en est-il de mon travail actuel?`,
+  },
+  en: {
+    typingText: '| My previous role"',
+    title: 'What about my previous work?',
+  },
+}
+
+export const newFeatures = {
+  fr: [
+    {
+      imgFile: 'flexiweb-evo-logo-310w.png',
+      title: 'Développeur Web Freelance',
+      subtitle:
+        "Spécialisé dans la création de solutions web, de la landing page à l’application complète, adaptées à vos besoins et objectifs.",
+      href: 'https://www.flexiweb-evo.eu/',
+    },
+  ],
+  en: [
+    {
+      imgFile: 'feature-logo_100w.png',
+      title: 'Freelance Web Developer',
+      subtitle:
+        'Specializing in the creation of web solutions, from landing pages to complete applications, adapted to your needs and objectives.',
+        href: 'https://www.flexiweb-evo.eu/',
+    },
+  ],
+}
+
+export const newFeatureCards = {
+  fr: [
+    {
+      name: '',
+      description: '',
+      imgFile: 'flexiweb-evo_1280wx960h.png',
+      logo_link: '',
+      logo_img: '',
+      source_img_link: '',
+      collection: 'news',
+    },
+  ],
+  en: [
+    {
+      name: '',
+      description: '',
+      imgFile: 'flexiweb-evo_1280wx960h.png',
+      logo_link: '',
+      logo_img: '',
+      source_img_link: '',
       collection: 'news',
     },
   ],

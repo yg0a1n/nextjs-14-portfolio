@@ -36,7 +36,7 @@ const TasksCard = ({
           {logo_link && (
             <Link href={logo_link} passHref>
               <Image
-                src={`/img/logos/${logo_img}`}
+                src={`/logos/${logo_img}`}
                 className="rounded-full"
                 alt={name}
                 width={30}

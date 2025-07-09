@@ -1,9 +1,9 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import TypingText from '@/components/TypingText'
 import TitleText from '@/components/TitleText'
+import TypingText from '@/components/TypingText'
 import { aboutMeContent } from '@/constants'
+import { motion } from 'framer-motion'
 
 import { fadeIn, staggerContainer } from '@/utils/motion'
 
@@ -33,7 +33,7 @@ export default function About({ lang }: { lang: string }) {
 
         <motion.img
           variants={fadeIn('up', 'tween', 0.3, 1)}
-          src="/img/icons/arrow-down.svg"
+          src="/icons/arrow-down.svg"
           alt="arrow down"
           className="w-[18px] h-[28px] object-contain mt-[28px]"
         />

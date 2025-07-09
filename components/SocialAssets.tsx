@@ -2,13 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const SocialAssets = ({ isDark }: { isDark: boolean }) => (
-  <div className="z-10 flex gap-4 p-2 rounded-lg">
+  <div className="flex z-10 gap-4 p-2 rounded-lg">
     <Link href="https://www.linkedin.com/in/y-goalen/">
       <Image
         src={
           isDark
-            ? '/img/logos/linkedin-white.svg'
-            : '/img/logos/linkedin-black.svg'
+            ? '/logos/linkedin-white.svg'
+            : '/logos/linkedin-black.svg'
         }
         alt="linkedin"
         className="w-[24px] h-[24px] object-contain cursor-pointer"
@@ -16,12 +16,12 @@ const SocialAssets = ({ isDark }: { isDark: boolean }) => (
         height={24}
       />
     </Link>
-    <Link href="https://github.com/BLOCKCHAINDEVWEB">
+    <Link href="https://github.com/yg0a1n">
       <Image
         src={
           isDark
-            ? '/img/logos/github-logo-white.svg'
-            : '/img/logos/github-logo-black.svg'
+            ? '/logos/github-logo-white.svg'
+            : '/logos/github-logo-black.svg'
         }
         alt="linkedin"
         className="w-[24px] h-[24px] object-contain cursor-pointer"
@@ -31,7 +31,7 @@ const SocialAssets = ({ isDark }: { isDark: boolean }) => (
     </Link>
     <Link href="mailto:y.goalen@outlook.com">
       <Image
-        src={isDark ? '/img/icons/at-white.png' : '/img/icons/at-black.png'}
+        src={isDark ? '/icons/at-white.png' : '/icons/at-black.png'}
         alt="at"
         className="w-[24px] h-[24px] object-contain cursor-pointer"
         width={24}

@@ -1,23 +1,18 @@
-'use client'
-
-import { motion } from 'framer-motion'
-
 import NewFeatures from '@/components/NewFeatures'
 import TasksCard from '@/components/TasksCard'
 import TitleText from '@/components/TitleText'
 import TypingText from '@/components/TypingText'
-import { newFeatureCards, newFeatures, newFeaturesContent } from '@/constants'
 import { fadeIn, staggerContainer } from '@/utils/motion'
+import { motion } from 'framer-motion'
 
-export default function WhatsNew({ lang }: { lang: string }) {
-  const { typingText, title } =
-    lang === 'en' ? newFeaturesContent.en : newFeaturesContent.fr
-  const newFeaturesTranslated = lang === 'en' ? newFeatures.en : newFeatures.fr
-  const newFeatureCardsTranslated =
-    lang === 'en' ? newFeatureCards.en : newFeatureCards.fr
-
+export default function Web3Projects({ typingText, title, web3ProCompany, web3ProProjectCards }: {
+  typingText: string,
+  title: string,
+  web3ProCompany: any[],
+  web3ProProjectCards: any[],
+}) {
   return (
-    <section className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
+    <>
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"
@@ -31,20 +26,36 @@ export default function WhatsNew({ lang }: { lang: string }) {
         >
           <TypingText title={typingText} />
           <TitleText title={<>{title}</>} />
-          <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-            {newFeaturesTranslated.map((feature) => (
+          <div className="mt-[48px] flex flex-wrap justify-between gap-[52px]">
+            {web3ProCompany.map((feature) => (
               <NewFeatures key={feature.title} {...feature} />
             ))}
           </div>
         </motion.div>
 
-        {newFeatureCardsTranslated.map(
+        {web3ProProjectCards.map(
           (project, index) =>
             index === 0 && (
               <TasksCard key={`news-${index}`} index={index} {...project} />
             )
         )}
       </motion.div>
-    </section>
+      <motion.div
+        variants={staggerContainer(0, 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="2xl:max-w-[1280px] w-full mx-auto flex flex-col"
+      >
+        <div className="flex flex-wrap justify-between -mx-2 mt-20">
+          {web3ProProjectCards.map(
+            (project, index) =>
+              index !== 0 && (
+                <TasksCard key={`news-${index}`} index={index} {...project} />
+              )
+          )}
+        </div>
+      </motion.div>
+    </>
   )
 }

@@ -60,8 +60,8 @@ export default function RealizationsCard({
             <Image
               src={
                 isDark
-                  ? '/img/icons/arrow-white.svg'
-                  : '/img/icons/arrow-black.svg'
+                  ? '/icons/arrow-white.svg'
+                  : '/icons/arrow-black.svg'
               }
               alt="arrow"
               className="w-[40%] h-[40%] object-contain"

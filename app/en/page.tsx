@@ -1,34 +1,34 @@
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import Hero from '../sections/Hero'
+import Navbar from '@/components/Navbar'
 import About from '../sections/About'
-import GetStarted from '../sections/GetStarted'
-import WhatsNew from '../sections/WhatsNew'
-import Tasks from '../sections/Tasks'
-import World from '../sections/World'
-import Realizations from '../sections/Realizations'
+import Experience from '../sections/Experience'
 import Feedback from '../sections/Feedback'
+import GetStarted from '../sections/GetStarted'
+import Hero from '../sections/Hero'
+import Tasks from '../sections/Tasks'
+import WhatsNew from '../sections/WhatsNew'
+import World from '../sections/World'
 
 export default async function Home() {
   return (
-    <div className="bg-primary-black overflow-hidden">
+    <div className="overflow-hidden bg-primary-black">
       <Navbar />
       <Hero />
       <div className="relative">
         <GetStarted lang="en" />
-        <div className="gradient-03 z-0" />
+        <div className="z-0 gradient-03" />
         <About lang="en" />
       </div>
       <div className="relative">
-        <Realizations lang="en" />
-        <div className="gradient-04 z-0" />
+        <Experience lang="en" />
+        <div className="z-0 gradient-04" />
         <WhatsNew lang="en" />
-        <div className="gradient-04 z-0" />
+        <div className="z-0 gradient-04" />
         <Tasks lang="en" />
       </div>
       <World lang="en" />
       <div className="relative">
-        <div className="gradient-04 z-0" />
+        <div className="z-0 gradient-04" />
         <Feedback lang="en" />
       </div>
       <Footer lang="en" />
