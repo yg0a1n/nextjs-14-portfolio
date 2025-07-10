@@ -1,6 +1,6 @@
 'use client'
 
-import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 
 const ThemeButton = ({
   theme,
@@ -12,15 +12,15 @@ const ThemeButton = ({
   <button
     aria-label="Toggle Dark Mode"
     type="button"
-    className="flex items-center justify-center rounded-lg p-2 transition-colors duration-200 focus:outline-none"
+    className="flex justify-center items-center p-2 rounded-lg transition-colors duration-200 focus:outline-none"
     onClick={() => {
       setTheme(theme === 'dark' ? 'light' : 'dark')
     }}
   >
     {theme === 'dark' ? (
-      <SunIcon className="h-5 w-5 text-white" />
+      <SunIcon className="w-5 h-5" />
     ) : (
-      <MoonIcon className="h-5 w-5 text-black" />
+      <MoonIcon className="w-5 h-5" />
     )}
   </button>
 )

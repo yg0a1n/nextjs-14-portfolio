@@ -1,13 +1,12 @@
 'use client'
 
-import React from 'react'
 import { motion } from 'framer-motion'
 
-import { staggerContainer, fadeIn, textVariant } from '@/utils/motion'
-import TypingText from '@/components/TypingText'
-import TitleText from '@/components/TitleText'
-import TasksCard from '@/components/TasksCard'
+import TasksCard from '@/components/tasks-card'
+import TitleText from '@/components/title-text'
+import TypingText from '@/components/typing-text'
 import { tasks, tasksCards } from '@/constants'
+import { fadeIn, staggerContainer, textVariant } from '@/utils/motion'
 
 export default function Tasks({ lang }: { lang: string }) {
   const { typingText, title, content } = lang === 'en' ? tasks.en : tasks.fr
@@ -15,10 +14,10 @@ export default function Tasks({ lang }: { lang: string }) {
   const tasksCardsTranslated = lang === 'en' ? tasksCards.en : tasksCards.fr
 
   return (
-    <section className="px-6 py-12 sm:p-16 xs:p-8">
+    <section id="tasks" className="px-6 py-12 sm:p-16 xs:p-8">
       <motion.div
         variants={staggerContainer(0, 0)}
-        initial="hidden"
+        initial="show"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className="2xl:max-w-[1280px] w-full mx-auto flex flex-col"
@@ -33,7 +32,7 @@ export default function Tasks({ lang }: { lang: string }) {
         >
           {content}
         </motion.p>
-        <div className="flex flex-wrap justify-between mt-20 -mx-2">
+        <div className="flex flex-wrap justify-between -mx-2 mt-20">
           {tasksCardsTranslated.map((project, index) => (
             <TasksCard key={`tasks-${index}`} index={index} {...project} />
           ))}

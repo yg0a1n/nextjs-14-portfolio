@@ -83,15 +83,23 @@ export const myPortfolioItemsWebsite = {
       imgFile: 'nextjs-starter-ui-kit_900w675h.png',
       title: 'Kit de démarrage Next.js 15',
       subtitle:
-        "Starter Next.js 15 avec Tailwind CSS et shadcn/ui, intègre Docker et GitHub Actions pour un déploiement CI/CD automatisé sur Fly.io.",
+        'Starter Next.js 15 avec Tailwind CSS et shadcn/ui, intègre Docker et GitHub Actions pour un déploiement CI/CD automatisé sur Fly.io.',
       href: 'https://starter-next15-ui-kit.vercel.app/',
-      tags: ['nextjs15', 'tailwindcss', 'shadcn-ui', 'docker', 'cookies-consent', 'cicd', 'flyio'],
+      tags: [
+        'nextjs15',
+        'tailwindcss',
+        'shadcn-ui',
+        'docker',
+        'cookies-consent',
+        'cicd',
+        'flyio',
+      ],
     },
     {
       imgFile: 'crypto-leetchi_1200w900h.jpg',
       title: 'Crypto Leetchi',
       subtitle:
-        "Développement d’une Dapp Web3 réalisé dans le cadre d’une formation blockchain à la Wild Code School.",
+        'Développement d’une Dapp Web3 réalisé dans le cadre d’une formation blockchain à la Wild Code School.',
       href: 'https://leetchi.ethprod.xyz/home',
       tags: ['react', 'ethers', 'ipfs'],
     },
@@ -106,55 +114,54 @@ export const myPortfolioItemsWebsite = {
     {
       imgFile: 'markdown_qa_demo_900wx675h.png',
       title: 'Markdown QA',
-      subtitle: "Conception d’un outil de gestion des priorités permettant le suivi, la classification et la résolution des erreurs issues des journaux des serveurs backend.",
+      subtitle:
+        'Conception d’un outil de gestion des priorités permettant le suivi, la classification et la résolution des erreurs issues des journaux des serveurs backend.',
       href: 'https://nextjs-markdown-qa.vercel.app/',
       tags: ['nextjs', 'mdx'],
-    },
-    {
-      imgFile: 'uptime_status_demo_900w675h.png',
-      title: 'Uptime status',
-      subtitle: 'État des disponibilités des frontaux et du backend.',
-      href: 'https://nextjs-uptime-status.vercel.app/',
-      tags: ['nextjs', 'postgres'],
     },
   ],
   en: [
     {
-      imgFile: "nextjs-starter-ui-kit_900w675h.png",
-      title: "Next.js 15 Starter Kit",
-      subtitle: "Next.js 15 starter with Tailwind CSS and shadcn/ui, includes Docker and GitHub Actions for automated CI/CD deployment on Fly.io.",
-      href: "https://nextjs-14-portfolio.vercel.app/",
-      tags: ["nextjs15", "tailwindcss", "shadcn-ui", "docker", "github-actions", "cicd", "flyio"]
+      imgFile: 'nextjs-starter-ui-kit_900w675h.png',
+      title: 'Next.js 15 Starter Kit',
+      subtitle:
+        'Next.js 15 starter with Tailwind CSS and shadcn/ui, includes Docker and GitHub Actions for automated CI/CD deployment on Fly.io.',
+      href: 'https://nextjs-14-portfolio.vercel.app/',
+      tags: [
+        'nextjs15',
+        'tailwindcss',
+        'shadcn-ui',
+        'docker',
+        'github-actions',
+        'cicd',
+        'flyio',
+      ],
     },
     {
-      imgFile: "crypto-leetchi_1200w900h.jpg",
-      title: "Crypto Leetchi",
-      subtitle: "Development of a Web3 Dapp as part of a blockchain training program at Wild Code School.",
-      href: "https://leetchi.ethprod.xyz/home",
-      tags: ["react", "ethers", "ipfs"]
+      imgFile: 'crypto-leetchi_1200w900h.jpg',
+      title: 'Crypto Leetchi',
+      subtitle:
+        'Development of a Web3 Dapp as part of a blockchain training program at Wild Code School.',
+      href: 'https://leetchi.ethprod.xyz/home',
+      tags: ['react', 'ethers', 'ipfs'],
     },
     {
-      imgFile: "couleurpartage_900w675h.png",
-      title: "Couleur et partage",
-      subtitle: "Creation of a simple web page for a self-employed painter based in Quebec, dedicated to her professional communication.",
-      href: "https://www.couleurpartage.xyz/fr",
-      tags: ["nextjs", "tailwind", "sendgrid"]
+      imgFile: 'couleurpartage_900w675h.png',
+      title: 'Couleur et partage',
+      subtitle:
+        'Creation of a simple web page for a self-employed painter based in Quebec, dedicated to her professional communication.',
+      href: 'https://www.couleurpartage.xyz/fr',
+      tags: ['nextjs', 'tailwind', 'sendgrid'],
     },
     {
-      imgFile: "markdown_qa_demo_900wx675h.png",
-      title: "Markdown QA",
-      subtitle: "Design of a priority management tool for tracking, classifying, and resolving errors from backend server logs.",
-      href: "https://nextjs-markdown-qa.vercel.app/",
-      tags: ["nextjs", "mdx"]
+      imgFile: 'markdown_qa_demo_900wx675h.png',
+      title: 'Markdown QA',
+      subtitle:
+        'Design of a priority management tool for tracking, classifying, and resolving errors from backend server logs.',
+      href: 'https://nextjs-markdown-qa.vercel.app/',
+      tags: ['nextjs', 'mdx'],
     },
-    {
-      imgFile: "uptime_status_demo_900w675h.png",
-      title: "Uptime Status",
-      subtitle: "Availability status of frontend and backend services.",
-      href: "https://nextjs-uptime-status.vercel.app/",
-      tags: ["nextjs", "postgres"]
-    }
-  ]
+  ],
 }
 
 export const myPortfolioItemsWeb3 = {
@@ -323,7 +330,7 @@ export const newFeatures = {
       imgFile: 'flexiweb-evo-logo-310w.png',
       title: 'Développeur Web Freelance',
       subtitle:
-        "Spécialisé dans la création de solutions web, de la landing page à l’application complète, adaptées à vos besoins et objectifs.",
+        'Spécialisé dans la création de solutions web, de la landing page à l’application complète, adaptées à vos besoins et objectifs.',
       href: 'https://www.flexiweb-evo.eu/',
     },
   ],
@@ -333,7 +340,7 @@ export const newFeatures = {
       title: 'Freelance Web Developer',
       subtitle:
         'Specializing in the creation of web solutions, from landing pages to complete applications, adapted to your needs and objectives.',
-        href: 'https://www.flexiweb-evo.eu/',
+      href: 'https://www.flexiweb-evo.eu/',
     },
   ],
 }
@@ -528,9 +535,9 @@ export const feedbacksContents = {
 
 export const footerContents = {
   fr: {
-    copyright: 'Copyright © 2023 Portfolio. Tous droits réservés.',
+    copyright: '© 2025 Portfolio. Tous droits réservés.',
   },
   en: {
-    copyright: 'Copyright © 2023 Portfolio. All rights reserved.',
+    copyright: '© 2025 Portfolio. All rights reserved.',
   },
 }

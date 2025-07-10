@@ -1,7 +1,7 @@
 'use client'
 
-import TitleText from '@/components/TitleText'
-import TypingText from '@/components/TypingText'
+import TitleText from '@/components/title-text'
+import TypingText from '@/components/typing-text'
 import { aboutMeContent } from '@/constants'
 import { motion } from 'framer-motion'
 
@@ -12,8 +12,8 @@ export default function About({ lang }: { lang: string }) {
     lang === 'en' ? aboutMeContent.en : aboutMeContent.fr
 
   return (
-    <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
-      <div className="gradient-02 z-0" />
+    <section id="about" className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
+      <div className="z-0 gradient-02" />
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"

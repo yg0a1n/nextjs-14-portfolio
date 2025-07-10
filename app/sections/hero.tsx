@@ -1,17 +1,17 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
+import { motion } from 'framer-motion'
 import { useQRCode } from 'next-qrcode'
 
+import TitleText from '@/components/title-text'
+import TypingText from '@/components/typing-text'
 import { getStartedContent, startingFeatures } from '@/constants'
-import TypingText from '@/components/TypingText'
-import TitleText from '@/components/TitleText'
 
-import StartSteps from '@/components/StartSteps'
-import { staggerContainer, fadeIn } from '@/utils/motion'
+import StartSteps from '@/components/start-steps'
+import { fadeIn, staggerContainer } from '@/utils/motion'
 
-export default function GetStarted({ lang }: { lang: string }) {
+export default function Hero({ lang }: { lang: string }) {
   const { Canvas } = useQRCode()
 
   const { typingText, title, linkText } =
@@ -21,7 +21,7 @@ export default function GetStarted({ lang }: { lang: string }) {
     lang === 'en' ? startingFeatures.en : startingFeatures.fr
 
   return (
-    <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
+    <section id="hero" className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"
@@ -34,7 +34,7 @@ export default function GetStarted({ lang }: { lang: string }) {
             variants={fadeIn('right', 'tween', 0.3, 1)}
             src="/img/photo-identité_280w.webp"
             alt="Yannick goalen identity photo"
-            className="object-contain rounded-lg w-full max-w-lg"
+            className="object-contain w-full max-w-lg rounded-lg"
             style={{ maxWidth: '500px', minWidth: '250px' }}
           />
         </div>
@@ -52,8 +52,8 @@ export default function GetStarted({ lang }: { lang: string }) {
                 text={feature}
               />
             ))}
-            <div className="flex justify-between items-center gap-4">
-              <div className="flex items-center gap-2">
+            <div className="flex gap-4 justify-between items-center">
+              <div className="flex gap-2 items-center">
                 {linkText}
                 <a
                   href="https://storage.googleapis.com/cv-pwahost/CV_DEV_Y.Goalen.pdf"
@@ -62,7 +62,7 @@ export default function GetStarted({ lang }: { lang: string }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <ArrowTopRightOnSquareIcon className="h-6 w-6 text-gray-500" />
+                  <ArrowTopRightOnSquareIcon className="w-6 h-6 text-gray-500" />
                 </a>
               </div>
               <a

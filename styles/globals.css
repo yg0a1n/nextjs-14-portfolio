@@ -6,19 +6,110 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Eudoxus Sans', sans-serif;
+  font-family: 'Geist Mono', 'monospace', sans-serif;
   scroll-behavior: smooth;
 }
 
-:root {
-  /* Your default theme */
-  --background: white;
-  --foreground: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair), serif !important;
 }
 
-[data-theme='dark'] {
-  --background: black;
-  --foreground: white;
+/* Your default theme */
+:root {
+  /* Base background */
+  --background: #ffffff;
+  --foreground: #14121f;
+
+  /* Muted/subtle backgrounds */
+  --muted: #f4f4f6;
+  --muted-foreground: #33255b;
+
+  /* Card / UI elements */
+  --card: #fdfcfe;
+  --card-foreground: #291f43;
+
+  --popover: #ffffff;
+  --popover-foreground: #291f43;
+
+  /* Border / separators */
+  --border: #d6d6e0;
+  --input: #d6d6e0;
+
+  /* Focus ring */
+  --ring: #6e56cf;
+
+  /* Hovered & active UI */
+  --hovered: #f0f0fa;
+  --active: #e6e6f6;
+
+  /* Hovered borders */
+  --hover-border: #7d66d9;
+
+  /* Primary (main CTA or solid button) */
+  --primary: #6e56cf;
+  --primary-foreground: #ffffff;
+
+  --primary-hover: #7d66d9;
+
+  /* Secondary buttons or accents */
+  --secondary: #f4f4f6;
+  --secondary-foreground: #33255b;
+
+  /* Accent color (less frequent emphasis) */
+  --accent: #d0c6f6;
+  --accent-foreground: #291f43;
+
+  /* Destructive (if needed) */
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+
+  /* Texts */
+  --low-contrast-text: #56468b;
+  --high-contrast-text: #291f43;
+}
+
+.dark {
+  --background: #14121f;
+  --foreground: #e2ddfe;
+
+  --muted: #1b1525;
+  --muted-foreground: #baa7ff;
+
+  --card: #291f43;
+  --card-foreground: #e2ddfe;
+
+  --popover: #291f43;
+  --popover-foreground: #e2ddfe;
+
+  --border: #56468b;
+  --input: #56468b;
+  --ring: #56468b;
+
+  --hovered: #33255b;
+  --active: #3c2e69;
+
+  --hover-border: #6958ad;
+
+  --primary: #6e56cf;
+  --primary-foreground: #e2ddfe;
+  --primary-hover: #7d66d9;
+
+  --secondary: #1b1525;
+  --secondary-foreground: #baa7ff;
+
+  --accent: #6958ad;
+  --accent-foreground: #e2ddfe;
+
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+
+  --low-contrast-text: #baa7ff;
+  --high-contrast-text: #e2ddfe;
 }
 
 .gradient-01 {

@@ -1,7 +1,7 @@
-import { notFound } from 'next/navigation'
 import Image from 'next/image'
+import { notFound } from 'next/navigation'
 
-import Modal from '@/components/Modal'
+import Modal from '@/components/modal'
 import { newFeatureCards } from '@/constants'
 
 const NewTasksModalPage = ({ params }: { params: { id: string } }) => {

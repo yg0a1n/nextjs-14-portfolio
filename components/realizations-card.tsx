@@ -39,7 +39,7 @@ export default function RealizationsCard({
         />
       </Link>
 
-      <div className="flex items-center justify-between w-full">
+      <div className="flex justify-between items-center w-full">
         <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
           <h4 className="font-normal lg:text-[42px] text-[26px]">{title}</h4>
           <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">

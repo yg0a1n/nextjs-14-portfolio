@@ -28,7 +28,7 @@ const TasksCard = ({
 }) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-    className="w-full px-2 mb-4 flex-container md:w-1/2 lg:w-1/3"
+    className="px-2 mb-4 w-full flex-container md:w-1/2 lg:w-1/3"
   >
     <div className="my-5">
       <div className="flex justify-start">
@@ -45,9 +45,7 @@ const TasksCard = ({
             </Link>
           )}
         </div>
-        <h3 className="text-black dark:text-white font-bold text-[24px]">
-          {name}
-        </h3>
+        <h3 className="font-bold text-[24px]">{name}</h3>
       </div>
     </div>
 
@@ -67,7 +65,7 @@ const TasksCard = ({
     </div>
 
     <div className="my-5">
-      <div className="flex items-center gap-2">
+      <div className="flex gap-2 items-center">
         <p className="mt-2 text-secondary text-[14px] text-justify">
           {description}
         </p>

@@ -1,15 +1,20 @@
-import NewFeatures from '@/components/NewFeatures'
-import TasksCard from '@/components/TasksCard'
-import TitleText from '@/components/TitleText'
-import TypingText from '@/components/TypingText'
+import NewFeatures from '@/components/new-features'
+import TasksCard from '@/components/tasks-card'
+import TitleText from '@/components/title-text'
+import TypingText from '@/components/typing-text'
 import { fadeIn, staggerContainer } from '@/utils/motion'
 import { motion } from 'framer-motion'
 
-export default function Web3Projects({ typingText, title, web3ProCompany, web3ProProjectCards }: {
-  typingText: string,
-  title: string,
-  web3ProCompany: any[],
-  web3ProProjectCards: any[],
+export default function Web3Projects({
+  typingText,
+  title,
+  web3ProCompany,
+  web3ProProjectCards,
+}: {
+  typingText: string
+  title: string
+  web3ProCompany: any[]
+  web3ProProjectCards: any[]
 }) {
   return (
     <>

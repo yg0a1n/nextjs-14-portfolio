@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 
 import { useTheme } from 'next-themes'
 
-import PersonalProjects from '@/components/PersonalProjects'
-import Web3Projects from '@/components/Web3Projects'
+import PersonalProjects from '@/components/personal-projects'
+import Web3Projects from '@/components/web3-projects'
 import { myPortfolioItems, myPortfolioItemsWeb3, myPortfolioItemsWebsite, portfolioItemsWeb3Cards, web3ProExperiences } from '@/constants'
 
 export default function Experience({ lang }: { lang: string }) {
@@ -32,7 +32,7 @@ export default function Experience({ lang }: { lang: string }) {
   if (!mounted) return null
 
   return (
-    <section className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
+    <section id="experience" className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
       <PersonalProjects
         typingText={typingText}
         title={title}

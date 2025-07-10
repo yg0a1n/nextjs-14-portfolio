@@ -1,14 +1,8 @@
 'use client'
 
-import React from 'react'
 import { motion } from 'framer-motion'
 
 import { textVariant2 } from '@/utils/motion'
-
-type Props = {
-  title: JSX.Element
-  textStyles?: string
-}
 
 const TitleText = ({
   title,
@@ -21,7 +15,7 @@ const TitleText = ({
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    className={`mt-[8px] font-bold md:text-[64px] text-[40px] ${textStyles}`}
+    className={`font-bold mt-[8px] md:text-[64px] text-[40px] ${textStyles}`}
   >
     {title}
   </motion.h2>

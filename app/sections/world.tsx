@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import TitleText from '@/components/TitleText'
-import TypingText from '@/components/TypingText'
+import TitleText from '@/components/title-text'
+import TypingText from '@/components/typing-text'
 import { worldsContents } from '@/constants'
 import { fadeIn, staggerContainer } from '@/utils/motion'
 
@@ -14,7 +14,7 @@ export default function World({ lang }: { lang: string }) {
     lang === 'en' ? worldsContents.en : worldsContents.fr
 
   return (
-    <section className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
+    <section id="world" className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"

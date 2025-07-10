@@ -16,7 +16,7 @@ export const navVariants: Variants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 1,
+      delay: 0.2,
     },
   },
 }
@@ -50,8 +50,8 @@ export const staggerContainer = (
   hidden: {},
   show: {
     transition: {
-      staggerChildren,
-      delayChildren,
+      staggerChildren: 0.05,
+      delayChildren: 0.05,
     },
   },
 })
@@ -66,33 +66,29 @@ export const textVariant = (delay: number): Variants => ({
     opacity: 1,
     transition: {
       type: 'spring',
-      duration: 1.25,
+      duration: 0.6,
       delay,
     },
   },
 })
 
 export const textContainer: Variants = {
-  hidden: {
-    opacity: 0,
-  },
+  hidden: { opacity: 0 },
   show: (i: number = 1) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
+    transition: { staggerChildren: 0.04, delayChildren: i * 0.04 },
   }),
 }
 
 export const textVariant2: Variants = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
+  hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
       type: 'tween',
       ease: 'easeIn',
+      duration: 0.2,
     },
   },
 }
@@ -132,7 +128,7 @@ export const variants = (direction: string): Variants => ({
     rotate: 0,
     transition: {
       type: 'spring',
-      duration: 1.8,
+      duration: 0.7,
       delay: 0.5,
     },
   },
@@ -171,7 +167,7 @@ export const footerVariants: Variants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 0.5,
+      delay: 0.1,
     },
   },
 }

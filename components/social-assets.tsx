@@ -5,13 +5,9 @@ const SocialAssets = ({ isDark }: { isDark: boolean }) => (
   <div className="flex z-10 gap-4 p-2 rounded-lg">
     <Link href="https://www.linkedin.com/in/y-goalen/">
       <Image
-        src={
-          isDark
-            ? '/logos/linkedin-white.svg'
-            : '/logos/linkedin-black.svg'
-        }
-        alt="linkedin"
-        className="w-[24px] h-[24px] object-contain cursor-pointer"
+        src={isDark ? '/logos/linkedin-white.svg' : '/logos/linkedin-black.svg'}
+        alt="linkedin logo"
+        className="w-[24px] h-[24px] object-contain cursor-pointer pt-[3px]"
         width={24}
         height={24}
       />
@@ -23,19 +19,19 @@ const SocialAssets = ({ isDark }: { isDark: boolean }) => (
             ? '/logos/github-logo-white.svg'
             : '/logos/github-logo-black.svg'
         }
-        alt="linkedin"
-        className="w-[24px] h-[24px] object-contain cursor-pointer"
-        width={24}
-        height={24}
+        alt="github logo"
+        className="w-[25px] h-[25px] object-contain cursor-pointer pt-[2px] pl-[2px]"
+        width={25}
+        height={25}
       />
     </Link>
     <Link href="mailto:y.goalen@outlook.com">
       <Image
-        src={isDark ? '/icons/at-white.png' : '/icons/at-black.png'}
-        alt="at"
-        className="w-[24px] h-[24px] object-contain cursor-pointer"
-        width={24}
-        height={24}
+        src={isDark ? '/icons/at-white.svg' : '/icons/at-black.svg'}
+        alt="at icon"
+        className="w-[27px] h-[27px] object-contain cursor-pointer"
+        width={27}
+        height={27}
       />
     </Link>
   </div>

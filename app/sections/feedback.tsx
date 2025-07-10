@@ -4,15 +4,15 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { fadeIn, staggerContainer } from '@/utils/motion'
 import { feedbacksContents } from '@/constants'
+import { fadeIn, staggerContainer } from '@/utils/motion'
 
 export default function Feedback({ lang }: { lang: string }) {
   const { title, subtitle, content } =
     lang === 'en' ? feedbacksContents.en : feedbacksContents.fr
 
   return (
-    <section className="sm:p-16 xs:p-8 px-6 py-12">
+    <section id="feedback" className="px-6 py-12 sm:p-16 xs:p-8">
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"
@@ -29,19 +29,19 @@ export default function Feedback({ lang }: { lang: string }) {
             <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px]">
               {title}
             </h4>
-            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px]">
+            <p className="mt-[8px] font-normal sm:text-md text-[12px] sm:leading-[22.68px] leading-[16.68px]">
               {subtitle}
             </p>
           </div>
 
-          <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px]">
+          <p className="mt-[24px] font-normal sm:text-[24px] text-md sm:leading-[45.6px] leading-[39.6px]">
             {content}
           </p>
         </motion.div>
 
         <motion.div
           variants={fadeIn('left', 'tween', 0.2, 1)}
-          className="relative flex-1 flex justify-center items-center"
+          className="flex relative flex-1 justify-center items-center"
         >
           <Link href="https://onlinecvs.xyz/">
             <Image

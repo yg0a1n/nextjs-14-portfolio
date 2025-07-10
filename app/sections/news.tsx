@@ -2,14 +2,14 @@
 
 import { motion } from 'framer-motion'
 
-import NewFeatures from '@/components/NewFeatures'
-import TasksCard from '@/components/TasksCard'
-import TitleText from '@/components/TitleText'
-import TypingText from '@/components/TypingText'
+import NewFeatures from '@/components/new-features'
+import TasksCard from '@/components/tasks-card'
+import TitleText from '@/components/title-text'
+import TypingText from '@/components/typing-text'
 import { newFeatureCards, newFeatures, newFeaturesContent } from '@/constants'
 import { fadeIn, staggerContainer } from '@/utils/motion'
 
-export default function WhatsNew({ lang }: { lang: string }) {
+export default function News({ lang }: { lang: string }) {
   const { typingText, title } =
     lang === 'en' ? newFeaturesContent.en : newFeaturesContent.fr
   const newFeaturesTranslated = lang === 'en' ? newFeatures.en : newFeatures.fr
@@ -17,7 +17,7 @@ export default function WhatsNew({ lang }: { lang: string }) {
     lang === 'en' ? newFeatureCards.en : newFeatureCards.fr
 
   return (
-    <section className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
+    <section id="news" className="relative z-10 px-6 py-12 sm:p-16 xs:p-8">
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"

@@ -1,10 +1,21 @@
-import RealizationsCard from '@/components/RealizationsCard'
-import TitleText from '@/components/TitleText'
-import TypingText from '@/components/TypingText'
+import RealizationsCard from '@/components/realizations-card'
+import TitleText from '@/components/title-text'
+import TypingText from '@/components/typing-text'
 import { staggerContainer, textVariant } from '@/utils/motion'
 import { motion } from 'framer-motion'
 
-export default function PersonalProjects({ typingText, title, personalProjects, isDark }: { lang?: string, typingText: string, title: string, personalProjects: any[], isDark: boolean }) {
+export default function PersonalProjects({
+  typingText,
+  title,
+  personalProjects,
+  isDark,
+}: {
+  lang?: string
+  typingText: string
+  title: string
+  personalProjects: any[]
+  isDark: boolean
+}) {
   return (
     <motion.div
       variants={staggerContainer(0, 0)}

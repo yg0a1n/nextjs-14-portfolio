@@ -1,13 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 
 import { footerContents } from '@/constants'
 import { footerVariants } from '@/utils/motion'
-import SocialAssets from './SocialAssets'
+import SocialAssets from './social-assets'
 
 export default function Footer({ lang }: { lang: string }) {
   const [mounted, setMounted] = useState(false)
@@ -28,18 +28,18 @@ export default function Footer({ lang }: { lang: string }) {
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
-      className="sm:px-16 px-6 py-8 relative"
+      className="relative px-6 py-8 sm:px-16"
     >
-      <div className="footer-gradient z-0" />
+      <div className="z-0 footer-gradient" />
       <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col gap-8">
         <div className="flex flex-col">
           <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
-          <div className="flex items-center justify-between flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-between items-center">
             <h4 className="font-extrabold text-[24px]">Portfolio</h4>
             <p className="font-normal text-[14px] opacity-50">{copyright}</p>
 
-            <div className="flex gap-4 rounded-lg p-2 z-10">
+            <div className="flex z-10 gap-4 p-2 rounded-lg">
               <SocialAssets isDark={isDark} />
             </div>
           </div>
