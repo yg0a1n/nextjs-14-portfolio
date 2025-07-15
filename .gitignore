@@ -40,5 +40,4 @@ next-env.d.ts
 .vscode
 
 # Snapshot
-pnpm-lock.yaml
 pnpm-workspace.yaml
